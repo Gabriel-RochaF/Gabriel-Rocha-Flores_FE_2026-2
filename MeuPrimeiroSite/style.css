@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url(fontes/Minecraft.ttf);
+}
+@font-face {
+    font-family: 'Fortnite';
+    src: url(fontes/Burbank\ Big\ Condensed\ Black.otf);
+}
+
+body {
+           background-color: rgb(26, 62, 104);
+           color: rgb(176, 195, 233);
+           font-size: 20px;
+           font-family: sans-serif;
+       }
+       a {color: rgb(124, 218, 255);}
+       table,th,td{border: 2px solid rgb(176, 195, 233);}
+       table{
+           border-collapse: collapse;
+       }
+       .Homem-Aranha {
+           background-image: url(img/icones/Homen-aranha.jpg);
+           background-size: 100% 120%;
+       }
+       .Homem-Aranha_texto {
+            color: rgb(216, 201, 201);
+        }
+       .Minecraft{
+           background-image: url(img/icones/Overworld_background.png);
+           background-size: contain;
+       }
+       .Minecraft_texto {
+            color: rgb(182, 182, 181);
+            font-family: Minecraft;
+            font-size: 1.5rem;
+            
+       }
+       .fortnite {
+           background-image: url(img/icones/fundo_Fortnite.jpg);
+           background-size: cover;
+       }
+       .Fortnite_Texto{
+           color: white;
+           font-family: Fortnite;
+           font-size: 2rem;
+       }
