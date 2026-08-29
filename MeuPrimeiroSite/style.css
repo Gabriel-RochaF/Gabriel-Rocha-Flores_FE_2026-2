@@ -30,27 +30,37 @@ body {
         article.Homem-Aranha {
             background-image: url(img/icones/Homen-aranha.jpg);
             background-size: 100% 120%;
+            border-radius: 12px;
+            padding: 1px 20px;
             width: 100%;
         }
         .Homem-Aranha {
             color: rgb(216, 201, 201);
             width: 70%;
+            font-size: 1.5rem;
         }
         article.Minecraft{
             background-image: url(img/icones/Overworld_background.png);
             background-size: auto;
             width: 100%;
+            border-radius: 12px;
+            padding: 1px 20px;
+            width: 100%;
+            margin-bottom: 1em;
         }
         .Minecraft {
             color: rgb(182, 182, 181);
             font-family: Minecraft;
-            font-size: 1.3rem;
+            font-size: 1.7rem;
             width: 70%;
             
         }
         article.Fortnite {
             background-image: url(img/icones/fundo_Fortnite.jpg);
             background-size: cover;
+            width: 100%;
+            border-radius: 12px;
+            padding: 1px 20px;
             width: 100%;
         }
         .Fortnite{
@@ -64,10 +74,15 @@ body {
             border: 2px solid rgb(65, 99, 141);
             padding: 20px;
             margin: 30px;
-            height: 600px;
+            height: 37em;
             overflow: auto;
         }
         #disciplinas .destaque {
             background-color: rgb(41, 94, 155);
             font-weight: 900;
+        }
+        .flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
         }
