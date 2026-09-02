@@ -14,7 +14,7 @@ html{
 box-sizing: inherit;
 }
 
-body {
+        body {
             background-color: rgb(26, 62, 104);
             color: rgb(176, 195, 233);
             font-size: 20px;
@@ -81,8 +81,47 @@ body {
             background-color: rgb(41, 94, 155);
             font-weight: 900;
         }
-        .flex {
+        #flex {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            padding: 35px;
+            background-color: rgb(15, 46, 82);
+            border: 2px solid rgb(65, 99, 141);
+            border-radius: 12px;
+        }
+        #flex_imagens {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            height: 30rem;
+            overflow: auto;
+        }
+        .imagem{
+            height: 10em;
+            width: 10em;
+        }
+
+        .coluna{
+            width: 33%;
+            border: 2px solid rgb(65, 99, 141);
+            border-radius: 12px;
+            background-color: rgb(26, 62, 104);
+            padding: 5px;
+        }
+
+        #formulario {
+            border: 2px solid rgb(65, 99, 141);
+            border-radius: 12px;
+            background-color: rgb(26, 62, 104);
+            padding: 5px;
+            width: 18em;
+        }
+
+        #icones {
+            border: 2px solid rgb(65, 99, 141);
+            border-radius: 12px;
+            background-color: rgb(15, 46, 82);
+            padding: 5px;
+            width: 18em;
         }
