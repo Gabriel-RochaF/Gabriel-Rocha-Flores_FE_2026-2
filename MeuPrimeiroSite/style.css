@@ -125,3 +125,18 @@ box-sizing: inherit;
             padding: 5px;
             width: 18em;
         }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 500px 30em;
+            padding: 35px;
+            background-color: rgb(15, 46, 82);
+            border: 2px solid rgb(65, 99, 141);
+            border-radius: 12px;
+            grid-row-gap: 20px;
+
+        }
+
+        .imagens_personagens {
+            width: 450px;
+        }
