@@ -126,11 +126,24 @@ box-sizing: inherit;
             width: 18em;
         }
 
+        p.links {
+            border: 2px solid rgb(65, 99, 141);
+            border-radius: 12px;
+            background-color: rgb(15, 46, 82);
+            padding: 5px;
+            font-size: medium;
+            width: 11em;
+        }
+        section.links{
+            display: grid;
+            grid-template-columns: 9em 9em;
+        }
+
+
         .layout {
             display: grid;
-            grid-template-columns: 500px 30em;
+            grid-template-columns: 22em 22em 22em;
             padding: 35px;
-            background-color: rgb(15, 46, 82);
             border: 2px solid rgb(65, 99, 141);
             border-radius: 12px;
             grid-row-gap: 20px;
@@ -138,5 +151,26 @@ box-sizing: inherit;
         }
 
         .imagens_personagens {
-            width: 450px;
+            width: 300px;
+        }
+
+        #headerIcones {
+            position: fixed;
+            background-color: rgb(4, 28, 56);;
+            width: 98.5%;
+        }
+
+        #mainIcones{
+            position: absolute;
+            top: 6em;
+            z-index: -1;
+
+        }
+        .personagem {
+            min-height: max-content;
+            background-color: rgb(27, 70, 119);
+            border: 2px solid rgb(48, 123, 209);
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
         }
