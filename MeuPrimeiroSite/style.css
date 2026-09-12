@@ -134,7 +134,7 @@ box-sizing: inherit;
             font-size: medium;
             width: 11em;
         }
-        section.links{
+        div.links{
             display: grid;
             grid-template-columns: 9em 9em;
         }
