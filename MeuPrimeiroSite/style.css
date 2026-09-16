@@ -13,7 +13,6 @@ html{
 *, *:before, *:after {
 box-sizing: inherit;
 }
-
         body {
             background-color: rgb(26, 62, 104);
             color: rgb(176, 195, 233);
@@ -126,17 +125,21 @@ box-sizing: inherit;
             width: 18em;
         }
 
-        p.links {
+        a.links {
             border: 2px solid rgb(65, 99, 141);
             border-radius: 12px;
             background-color: rgb(15, 46, 82);
             padding: 5px;
             font-size: medium;
-            width: 11em;
+            width: fit-content;
+            
         }
         div.links{
             display: grid;
-            grid-template-columns: 9em 9em;
+            grid-auto-flow: column;
+            position: absolute;
+            right: 2%;
+            top: 10px;
         }
 
 
@@ -157,7 +160,10 @@ box-sizing: inherit;
         #headerIcones {
             position: fixed;
             background-color: rgb(4, 28, 56);;
-            width: 98.5%;
+            width: 100%;
+            left: 0px;
+            top: 0px;
+            padding-bottom: 10px;
         }
 
         #mainIcones{
