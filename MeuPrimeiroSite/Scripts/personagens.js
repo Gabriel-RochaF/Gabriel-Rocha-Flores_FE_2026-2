@@ -1,4 +1,4 @@
-//areaPersonagens = document.getElementById("AreaPersonagens")
+const areaPersonagens = document.getElementById("AreaPersonagens")
 
 const dirImagens = "img/Personagens/"
 function Personagem(nome, universo, imagem) {
@@ -6,15 +6,35 @@ function Personagem(nome, universo, imagem) {
     this.universo = universo
     this.imagem = dirImagens + imagem
 }
+
+function adicionar(nome, universo, imagem){
+    personagens = personagens.concat(new Personagem(nome,universo,imagem))
+}
 let personagens = new Array()
-personagens = personagens.concat(new Personagem("Homen-aranha","Marvel","aranha.jpeg"))
-personagens = personagens.concat(new Personagem("Buzz LightYear","Toy Story/Pixar","buzz.jpeg"))
-personagens = personagens.concat(new Personagem("Freddy Fazbear","Five Nights at Freddy's","Freddy.jpg"))
-personagens = personagens.concat(new Personagem("jonesy","Fortnite","jonesy.jpg"))
-personagens = personagens.concat(new Personagem("Mario","Super Mario/Nintendo","Mario.jpg"))
-personagens = personagens.concat(new Personagem("Pikachu","Pokemon","pikachu.jpg"))
-personagens = personagens.concat(new Personagem("r2-d2","Star Wars","r2-d2.jpg"))
-personagens = personagens.concat(new Personagem("Rexy","Jurassic Park","rex.jpg"))
-personagens = personagens.concat(new Personagem("Steve","Minecraft","Steve.jpg"))
-personagens = personagens.concat(new Personagem("Wall-e","Wall-e/Pixar","wall-e.jpg"))
-console.log(personagens[0].universo)
+adicionar("Homen-aranha","Marvel","aranha.jpeg")
+adicionar("Buzz LightYear","Toy Story/Pixar","buzz.jpeg")
+adicionar("Freddy Fazbear","Five Nights at Freddy's","Freddy.jpg")
+adicionar("jonesy","Fortnite","jonesy.jpg")
+adicionar("Mario","Super Mario/Nintendo","Mario.jpg")
+adicionar("Pikachu","Pokemon","pikachu.jpg")
+adicionar("r2-d2","Star Wars","r2-d2.jpg")
+adicionar("Rexy","Jurassic Park","rex.jpg")
+adicionar("Steve","Minecraft","Steve.jpg")
+adicionar("Wall-e","Wall-e/Pixar","wall-e.jpg")
+
+for (let index = 0; index < personagens.length; index++) {
+    const personagem = document.createElement('div')
+    personagem.className = 'personagem'
+    const imagem = document.createElement('img')
+    imagem.setAttribute('src', personagens[index].imagem)
+    /*const nome = document.createElement('h2')
+    nome.innerText('Nome: ' + personagens[index].nome)
+    const universo = document.createElement('h3')
+    universo.innerText('Universo: ' + personagens[index].universo)*/
+    personagem.after(imagem)
+    /*personagem.append(nome)
+    personagem.append(universo)*/
+    areaPersonagens.appendChild(personagem)
+}
+
+console.log(personagens[5].imagem)
