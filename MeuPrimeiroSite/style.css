@@ -13,172 +13,342 @@ html{
 *, *:before, *:after {
 box-sizing: inherit;
 }
-        body {
-            background-color: rgb(26, 62, 104);
-            color: rgb(176, 195, 233);
-            font-size: 20px;
-            font-family: sans-serif;
-        }
-        a {color: rgb(124, 218, 255);}
-        table,th,td{
-        border: 2px solid rgb(176, 195, 233);
-        }
-        table{
-            border-collapse: collapse;
-        }
-        article.Homem-Aranha {
-            background-image: url(img/icones/Homen-aranha.jpg);
-            background-size: 100% 120%;
-            border-radius: 12px;
-            padding: 1px 20px;
-            width: 100%;
-        }
-        .Homem-Aranha {
-            color: rgb(216, 201, 201);
-            width: 70%;
-            font-size: 1.5rem;
-        }
-        article.Minecraft{
-            background-image: url(img/icones/Overworld_background.png);
-            background-size: auto;
-            width: 100%;
-            border-radius: 12px;
-            padding: 1px 20px;
-            width: 100%;
-            margin-bottom: 1em;
-        }
-        .Minecraft {
-            color: rgb(182, 182, 181);
-            font-family: Minecraft;
-            font-size: 1.7rem;
-            width: 70%;
-            
-        }
-        article.Fortnite {
-            background-image: url(img/icones/fundo_Fortnite.jpg);
-            background-size: cover;
-            width: 100%;
-            border-radius: 12px;
-            padding: 1px 20px;
-            width: 100%;
-        }
-        .Fortnite{
-            color: white;
-            font-family: Fortnite;
-            font-size: 2rem;
-            width: 70%;
-        }
-        .caixa-sagas{
-            background-color: rgb(15, 46, 82);
-            border: 2px solid rgb(65, 99, 141);
-            padding: 20px;
-            margin: 30px;
-            height: 37em;
-            overflow: auto;
-        }
-        #disciplinas .destaque {
-            background-color: rgb(41, 94, 155);
-            font-weight: 900;
-        }
-        #flex {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            padding: 35px;
-            background-color: rgb(15, 46, 82);
-            border: 2px solid rgb(65, 99, 141);
-            border-radius: 12px;
-        }
-        #flex_imagens {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            height: 30rem;
-            overflow: auto;
-        }
-        .imagem{
-            height: 10em;
-            width: 10em;
-        }
+body {
+    background-color: rgb(26, 62, 104);
+    color: rgb(176, 195, 233);
+    font-size: 20px;
+    font-family: sans-serif;
+}
+a {color: rgb(124, 218, 255);}
+table,th,td{
+border: 2px solid rgb(176, 195, 233);
+}
+table{
+    border-collapse: collapse;
+}
+article.Homem-Aranha {
+    background-image: url(img/icones/Homen-aranha.jpg);
+    background-size: 100% 120%;
+    border-radius: 12px;
+    padding: 1px 20px;
+    width: 100%;
+}
+.Homem-Aranha {
+    color: rgb(216, 201, 201);
+    width: 70%;
+    font-size: 1.5rem;
+}
+article.Minecraft{
+    background-image: url(img/icones/Overworld_background.png);
+    background-size: auto;
+    width: 100%;
+    border-radius: 12px;
+    padding: 1px 20px;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.Minecraft {
+    color: rgb(182, 182, 181);
+    font-family: Minecraft;
+    font-size: 1.7rem;
+    width: 70%;
+    
+}
+article.Fortnite {
+    background-image: url(img/icones/fundo_Fortnite.jpg);
+    background-size: cover;
+    width: 100%;
+    border-radius: 12px;
+    padding: 1px 20px;
+    width: 100%;
+}
+.Fortnite{
+    color: white;
+    font-family: Fortnite;
+    font-size: 2rem;
+    width: 70%;
+}
+.caixa-sagas{
+    background-color: rgb(15, 46, 82);
+    border: 2px solid rgb(65, 99, 141);
+    padding: 20px;
+    margin: 30px;
+    height: 37em;
+    overflow: auto;
+}
+#disciplinas .destaque {
+    background-color: rgb(41, 94, 155);
+    font-weight: 900;
+}
+#flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 35px;
+    background-color: rgb(15, 46, 82);
+    border: 2px solid rgb(65, 99, 141);
+    border-radius: 12px;
+}
+#flex_imagens {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 30rem;
+    overflow: auto;
+}
+.imagem{
+    height: 10em;
+    width: 10em;
+}
 
-        .coluna{
-            width: 33%;
-            border: 2px solid rgb(65, 99, 141);
-            border-radius: 12px;
-            background-color: rgb(26, 62, 104);
-            padding: 3%;
-        }
-        .coluna:hover{
-            background-color: rgb(29, 81, 139);
-        }
-        #formulario {
-            border: 2px solid rgb(65, 99, 141);
-            border-radius: 12px;
-            background-color: rgb(26, 62, 104);
-            padding: 5px;
-            width: 18em;
-        }
+.coluna{
+    width: 33%;
+    border: 2px solid rgb(65, 99, 141);
+    border-radius: 12px;
+    background-color: rgb(26, 62, 104);
+    padding: 3%;
+}
+.coluna:hover{
+    background-color: rgb(29, 81, 139);
+}
+#formulario {
+    border: 2px solid rgb(65, 99, 141);
+    border-radius: 12px;
+    background-color: rgb(26, 62, 104);
+    padding: 5px;
+    width: 18em;
+}
 
-        #icones {
-            border: 2px solid rgb(65, 99, 141);
-            border-radius: 12px;
-            background-color: rgb(15, 46, 82);
-            padding: 5px;
-            width: 18em;
-        }
+#icones {
+    border: 2px solid rgb(65, 99, 141);
+    border-radius: 12px;
+    background-color: rgb(15, 46, 82);
+    padding: 5px;
+    width: 18em;
+}
 
-        a.links {
-            border: 2px solid rgb(65, 99, 141);
-            border-radius: 12px;
-            background-color: rgb(15, 46, 82);
-            padding: 5px;
-            font-size: medium;
-            width: fit-content;
-            
-        }
-        div.links{
-            display: grid;
-            grid-auto-flow: column;
-            position: absolute;
-            right: 2%;
-            top: 10px;
-        }
+a.links {
+    border: 2px solid rgb(65, 99, 141);
+    border-radius: 12px;
+    background-color: rgb(15, 46, 82);
+    padding: 5px;
+    font-size: medium;
+    width: fit-content;
+    
+}
+div.links{
+    display: grid;
+    grid-auto-flow: column;
+    position: absolute;
+    right: 2%;
+    top: 10px;
+}
 
 
-        .layout {
-            display: grid;
-            grid-template-columns: 33% 33% 33%;
-            padding: 35px;
-            border: 2px solid rgb(65, 99, 141);
-            border-radius: 12px;
-            grid-row-gap: 20px;
+.layout {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    max-width: 60em;
+    align-self: center;
+    padding: 35px;
+    border: 2px solid rgb(65, 99, 141);
+    border-radius: 12px;
+    grid-row-gap: 20px;
 
-        }
+}
 
-        .imagens_personagens {
-            width: 100%;
-        }
+.imagens_personagens {
+    width: 100%;
+}
 
-        #headerIcones {
-            position: fixed;
-            background-color: rgb(4, 28, 56);;
-            width: 100%;
-            left: 0px;
-            top: 0px;
-            padding-bottom: 10px;
-        }
+#headerIcones {
+    position: fixed;
+    background-color: rgb(4, 28, 56);;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    padding-bottom: 10px;
+}
 
-        #mainIcones{
-            position: absolute;
-            top: 6em;
-            z-index: -1;
+#mainIcones{
+    position: absolute;
+    left: 0px;
+    top: 7em;
+    z-index: -1;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+.personagem {
+    min-height: max-content;
+    background-color: rgb(27, 70, 119);
+    border: 2px solid rgb(48, 123, 209);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.imagens_logo {
+    max-width: 15em;
+}
+#mainMemoria {
+    display: grid;
+    justify-content: center;
+}
+#jogoMemoria {
+    display: grid;
+    margin-top: 7em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: dense;
+    align-self: center;
+    padding: 35px;
+    border: 2px solid rgb(65, 99, 141);
+    border-radius: 15px;
+    width: 40em;
+}
 
-        }
-        .personagem {
-            min-height: max-content;
-            background-color: rgb(27, 70, 119);
-            border: 2px solid rgb(48, 123, 209);
-            margin: 20px;
-            padding: 20px;
-            border-radius: 10px;
-        }
+#jogoMemoria .personagem {
+    margin: 3px;
+    padding: 5px;
+    height: 8.7em;
+}
+#jogoMemoria .personagem:hover {
+    background-color: rgb(28, 84, 147);
+}
+#jogoMemoria .imagens_personagens {
+    height: 8em;
+    width: 8em;
+    border-radius: 5px;
+}
+#jogoMemoria .personagem .imagens_personagens {
+    display: none;
+}
+
+#jogoMemoria .personagem.carta-desvirada .imagens_personagens {
+    display: block;
+}
+
+#tela-vitoria {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(15, 100, 198);
+    padding: 30px;
+    border-radius: 30px;
+    display: none;
+}
+
+#headerMemoria {
+    position: fixed;
+    background-color: rgb(4, 28, 56);;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    padding-bottom: 1em;
+}
+
+#resetar {
+    padding: 10px;
+    border-radius: 5px;
+}
+@media screen and (orientation: portrait), (width <= 770px){
+    h1 {
+        font-size: 1.5em;
+    }
+    #disciplinas {
+        font-size: medium;
+    }
+    .imagens_logo {
+        max-width: 220px;
+    }
+    article.Homem-Aranha {
+        background-image: none;
+        background-color: red;
+    }
+    .Homem-Aranha {
+        width: 100%;
+        font-family: sans-serif;
+        font-size:large;
+    }
+    .Fortnite {
+        width: 100%;
+        font-family: sans-serif;
+        font-size:large;
+    }
+    .Minecraft {
+        width: 100%;
+        font-family: sans-serif;
+        font-size:large;
+    }
+    #formulario {
+        font-size: smaller;
+        max-width: 100%;
+    }
+
+    #flex {
+        flex-direction: column;
+
+    }
+    .coluna {
+        width: 100%;
+    }
+    #icones {
+        font-size: smaller;
+        max-width: 100%;
+    }
+    .layout{
+        grid-template-columns: 100%;
+        max-width: 25em;
+        padding: 35px;
+        border: 2px solid rgb(65, 99, 141);
+        border-radius: 12px;
+        grid-row-gap: 20px;
+    }
+    #formulario-jogo {
+        font-size: medium;
+    }
+    form#formulario-jogo {
+        display: grid;
+    }
+    input {
+        padding: 7px;
+        border-radius: 5px;
+    }
+    input[type=checkbox] {
+        transform: scale(1.5);
+        margin-left: 2em;
+    }
+
+    #jogoMemoria .personagem {
+        margin: 3px;
+        padding: 2px;
+        height: 4em
+    }
+    #jogoMemoria .imagens_personagens {
+        height: 3.6em;
+        width: 3.6em;
+        border-radius: 5px;
+    }
+
+    #jogoMemoria {
+        padding: 3px;
+        margin-top: 6em;
+        width: 18.5em;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-height: 450px) {
+    #jogoMemoria {
+        width: 30em;
+        margin-top: 8em;
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .layout{
+        grid-template-columns: 50% 50%;
+        max-width: 35em;
+        padding: 35px;
+        border: 2px solid rgb(65, 99, 141);
+        border-radius: 12px;
+        grid-row-gap: 20px;
+    }
+}

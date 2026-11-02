@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8">        
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Formulario jogos</title>
         <style>
             @import url(style.css);
         </style>
     </head>
-    <body>
+    <body id="body_formulario">
         <header>
             <h1>Formulario sobre jogos</h1>
             <p>
                 este formulario é sobre seu ultimo jogo jogado
             </p>
+            <nav class="links">
+                <a href="index.html" class="links">Voltar ao inicio</a>
+            </nav>
             <hr>
         </header>
         <main>
-            <form action="index.html">
-                <label for="jogo">Nome do jogo <input type="text" name="jogo" id="jogo"></label> <br>
-                <label for="desenvolvedora">desenvolvedora do jogo <input type="text" name="desenvolvedora" id="desenvolvedora"></label> <br>
-                <p> Plataformas disponiveis:</p>
-                <label for="playstation">
-                    <input type="checkbox" name="playstation" id="playstation">
-                    playstation
-                </label><br>
-                <label for="xbox">
-                    <input type="checkbox" name="xbox" id="xbox">
-                    xbox
-                </label><br>
-                <label for="nintendo">
-                    <input type="checkbox" name="nintendo" id="nintendo">
-                    nintendo
-                </label><br>
-                <label for="pc">
-                    <input type="checkbox" name="pc" id="pc">
-                    PC
-                </label><br>
-                <label for="genero">Qual o genero do jogo</label>
-                <select name="genero" id="genero">
-                    <option value="plataforma" selected>Plataforma</option>
-                    <option value="tiro">Tiro</option>
-                    <option value="sandbox">Sandbox</option>
-                    <option value="RPG">RPG</option>
-                    <option value="outro">Outro</option>
-                </select> <br>
-                <label for="data">Data de lançamento <input type="date" name="data" id="data"></label> <br>
-                <label for="nota">Avaliação (0-5) <input type="number" name="Avaliação" id="Avaliação" min="0" max="5"></label> <br>
-                <br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Recomeçar">
-            </form>
+            <div>
+                <form action="index.html" id="formulario-jogo">
+                    <label for="jogo">Nome do jogo: <br><input type="text" name="jogo" id="jogo"></label> <br>
+                    <label for="desenvolvedora">desenvolvedora do jogo: <br> <input type="text" name="desenvolvedora" id="desenvolvedora"></label> <br>
+                    <p> Plataformas disponiveis:</p>
+                    <label for="playstation">
+                        <input type="checkbox" name="playstation" id="playstation">
+                        playstation
+                    </label><br>
+                    <label for="xbox">
+                        <input type="checkbox" name="xbox" id="xbox">
+                        xbox
+                    </label><br>
+                    <label for="nintendo">
+                        <input type="checkbox" name="nintendo" id="nintendo">
+                        nintendo
+                    </label><br>
+                    <label for="pc">
+                        <input type="checkbox" name="pc" id="pc">
+                        PC
+                    </label><br>
+                    <label for="genero">Qual o genero do jogo</label>
+                    <select name="genero" id="genero">
+                        <option value="plataforma" selected>Plataforma</option>
+                        <option value="tiro">Tiro</option>
+                        <option value="sandbox">Sandbox</option>
+                        <option value="RPG">RPG</option>
+                        <option value="outro">Outro</option>
+                    </select> <br>
+                    <label for="data">Data de lançamento <input type="date" name="data" id="data"></label> <br>
+                    <label for="Avaliação">Avaliação (0-5) <input type="number" name="Avaliação" id="Avaliação" min="0" max="5"></label> <br>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Recomeçar">
+                </form>
+            </div>
         </main>
         <footer>
             <hr>
